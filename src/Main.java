@@ -22,8 +22,6 @@ public class Main {
 
         System.out.println(users);
         // Необходимо удалить все дубли (одинаковое имя и возраст)
-        //Метод Java Stream distinct()возвращает новый поток различных элементов.
-        // Поэтому его можно использовать для удаления дубликатов элементов из набора.
         List<User> usersWithoutDuplicate = users.stream().distinct().collect(Collectors.toList());
         System.out.println(usersWithoutDuplicate);
         System.out.println();
